@@ -7,9 +7,15 @@
 				<title>About me</title>	                    	                    
 						<!-- Bootstrap -->	                    
 					<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-	                                <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->  
+	                       <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->  
 	                     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-	                     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> 	   
+	                     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	                     <!--awesome font-->
+	                     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-hQpvDQiCJaD2H465dQfA717v7lu5qHWtDbWNPvaTJ0ID5xnPUlVXnKzq7b8YUkbN" crossorigin="anonymous">
+	                     <!--google font-->
+	                     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+	                     <!--animate.css cdn-->
+	                     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">	   
 							<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->	                        
 							<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->	                        
 							<!--[if lt IE 9]>	                         
@@ -18,71 +24,171 @@
 							<![endif]-->
 
 						<!-- For SEO purposes insert your own links so that crawlerbots will come to your site -->	
+						<script type="text/javascript">
+								$('#back').click(function() {
+								  $(this).toggleClass("animated hinge", function() {
+								    $(this).remove();
+								  });
+								});
+						</script>
 					<style>
-						body {
-   							font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-   							text-align: center;
-   							font-weight: bold;
-							}
+					body {
+					  margin: 0;
+					  padding: 0;
+					  font-family: lobster;
+					  font-size: 30px;
+					  height: 100%;
+					  background-color:black;
+					}
 
-						.container{
-							margin-top: 5px;
-							padding-top: 5px;
+					.container {
+					  padding: 30px;
+					  
+					}
+					.col-md-4{
+					  text-align:center;
+					  padding:10px;
+					  margin-left:200px;
+					}
+					.row{
+					  margin-top:50px;
+					}
+					p {
+					  color: firebrick;
+					  padding-top:10px;
+					}
+					.img-rounded{
+					  float:right
+					}
 
-						}
+					.img-bg {
+					  position: relative;
+					  background-image: url('https://images8.alphacoders.com/366/366991.jpg');
+					  width: 100%;
+					  height: auto;
+					  background-repeat: no-repeat;
+					  background-size: cover;
+					  margin-top:40px;
+					}
 
-						h1 {
-							margin-top: 20px;
-							padding-top: 20px;
-							font-size: 20px;
-						}
+					.fa {
+					  float: right;
+					  margin: 10px;
+					  padding-top: 10px;
+					}
 
-						.icons{
-							height: 60px;
-							width: 60px;
-							margin-left: 5px;
-							margin-top: 10px;
-						}
+					.text-default {
+					  padding: 20px;
+					}
 
-						#profilePic{
-							border: 3px solid black;
-						}
+					.fa-facebook-square {
+					  color: deeppink;
+					}
 
-						.col-md-1{
-							margin-right: 2px;
-						}
+					.fa-snapchat {
+					  color: yellow;
+					}
 
+					.fa-github {
+					  color: orange
+					}
 
+					.fa-instagram {
+					  color: green;
+					}
 
+					.fa-google-plus {
+					  color: red;
+					}
+
+					.navbar {
+					  margin: 0;
+					  padding: 0;
+					}
+
+					.navbar-brand {
+					  font-size: 30px;
+					  font-family: lobster;
+					}
+					.contact-us{
+					  position: relative;
+					  background-image: url('http://download.1wallpaper.net/20150308/abstract-colorful-rays-vector-vortex-1920x1080.jpg');
+					  width: 100%;
+					  height: 100%;
+					  background-repeat: no-repeat;
+					  background-size: cover;
+					  margin-top:0px;
+					}
+					.jumbo{
+					  margin:0 auto;
+					  width:50%;
+					  background-color:black;
+					}
 					</style>	                        
-		</head>	    
-			<body>	        
-					<div class="container-fluid">
-						<div class="row">
-							<div class="col-md-12">
-								<h1>An ex-banker, consultant and general worker</h1>
-								<p>Sometimes getting lost might do you some good<p>
-							</div>
-						</div>
-						<div class="container">
-						<!-- insert your own picture under image source -->	
-						<img src="#" id="profilePic" class="img-circle" alt="Cinque Terre" width="260" height="304">
-						</div>
-						<div class="col-md-3">
-						</div>
-						<!-- insert your own linked to get connected -->
-						<!-- please note this glyphicons are connected to this folder they are not from getbootstraps.com-->
-						<!-- credits to rohitink for his creativity http://rohitink.com/sociocons/-->
-						
-						<div class="col-md-1" id="pic"><img class="icons" src="sociocons-master/Sociocons/facebook-sociocon.png"> <a href="#" target="_blank"></div>
-						<div class="col-md-1" id="pic"><img class="icons" src="sociocons-master/Sociocons/google-sociocon.png" > <a href="#" target="_blank"></div>
-						<div class="col-md-1" id="pic"><img class="icons" src="sociocons-master/Sociocons/linkedin-sociocon.png"> <a href="#" target="_blank"></div>
-						<div class="col-md-1" id="pic"><img class="icons" src="sociocons-master/Sociocons/twitter-sociocon.png" > <a href="#" target="_blank"></div>
-						<div class="col-md-1" id="pic"><img class="icons" src="sociocons-master/Sociocons/email-sociocon.png" > <a href="#" target="_blank"></div>
-						<div class="col-md-1" id="pic"><img class="icons" src="sociocons-master/Sociocons/github-sociocon.png"> <a href="#" target="_blank"></div>
-						<div class="col-md-3">
-						</div>
-						</div>
+			</head>	    
+				<body>	        
+					<nav class="navbar navbar-inverse navbar-fixed-top">
+					  <div class="container-fluid">
+					    <div class="navbar-header">
+					      <a class="navbar-brand">Naughty-Boy</a>
+					    </div>
+					    <ul class="nav navbar-right navbar-nav">
+					      <li class="active"><a href="#home">Home</a></li>
+					      <li><a href="#projects">Projects</a></li>
+					      <li><a href="#contact-us">Contact</a></li>
+					    </ul>
+					  </div>
+					</nav>
+					<div class="img-bg container" id="home">
+					  <img src="https://pbs.twimg.com/profile_images/685892455804350464/LcVZZzIZ.jpg" class="img-rounded" style="border-radius:50%">
+					  <div class="row">
+					    <div class="col-md-4">
+					      <p>I specialize in Full-MEAN stack technologies, let me know if I can help in anyway.</p>
+					    </div>
+					    <div class="col-md-4">
+					      <p>but if you are a coffee-lover, magic-card player or just want to kick some ass</p>
+					    </div>
+					    <div class="col-md-4">
+					      <p style="color:lightpink">feel free to conncet with me</p>
+					    </div>
+					  </div>
+					  <a href="#" target='_blank'><i class="fa fa-github fa-3x fa-primary" aria-hidden="true"></i></a>
+					  <div class="bottom">
+					    <a href="#" target='_blank'><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
+					    <a href="#"><i class="fa fa-snapchat fa-3x fa-danger" aria-hidden="true"></i></a>
+					    <a href="#" target='_blank'><i class="fa fa-google-plus fa-3x" aria-hidden="true"></i></a>
+					    <a href="#" target='_blank'><i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i></a>
+					    <a href="#" target='_blank'><i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></a>
+					  </div>
 					</div>
-			</body>	
+					<div class="container" id="projects" style="background-color:black">
+					  <div class="jumbotron" style="background-color:maroon">
+					    <h2 style="color:white">Some of my kickass work</h2>
+					    <a href="https://github.com/boyboi86/bootstrap/blob/master/TributeToLKY.html" target='_blank'><img src="https://i.ytimg.com/vi/aSoyEib6N6w/maxresdefault.jpg" class="img-thumbnail" alt="A tribute page" width="304" height="236"></a>
+					    <a href="http://journalify.co/" target='_blank'><img src="http://img.sur.ly/thumbnails/620x343/j/journalify.co.png" class="img-thumbnail" alt="company website" width="304" height="236"></a>
+					    <a href="https://github.com/boyboi86/AppsLandingPage/blob/master/landingPageApp.html" target='_blank'><img src="http://bashooka.com/wp-content/uploads/2012/10/landing-page-tmpb-63.jpg" class="img-thumbnail" alt="Borrowed pictures" width="304" height="236"></a>
+					    <a href="https://github.com/boyboi86" target='_blank'><img src="http://bashooka.com/wp-content/uploads/2012/10/landing-page-tmpb-63.jpg" class="img-thumbnail" alt="Borrowed pictures" width="304" height="236"></a>
+					    <a href="https://github.com/boyboi86/" target='_blank'><img src="http://bashooka.com/wp-content/uploads/2012/10/landing-page-tmpb-63.jpg" class="img-thumbnail" alt="Borrowed pictures" width="304" height="236"></a>
+					    <a href="https://github.com/boyboi86" target='_blank'><img src="http://bashooka.com/wp-content/uploads/2012/10/landing-page-tmpb-63.jpg" class="img-thumbnail" alt="Borrowed pictures" width="304" height="236"></a>
+					  </div>
+					</div>
+					<div class="container contact-us" id="contact-us">
+					  <div class="jumbotron jumbo">
+					    <form role="action" class="form-horizontal">
+					      <div class="form-group">
+					        <h3 style="color:red">Leave your contact details, I'll get back to you</h3>
+					        <label class="name"><span class="glyphicon glyphicon-user"></span>Your name</label>
+					        <input type="text" class="form-control" placeholder="What's your name?">
+					        <label class="email"><span class="glyphicon glyphicon-globe"></span>Email address</label>
+					        <input type="email" class="form-control" placeholder="What's your email?">
+
+					        <label class="phone"><span class="glyphicon glyphicon-phone" aria-hidden="true"></span>Contact number</label>
+					        <input type="tel" class="form-control" placeholder="Your contact number">
+					        <button type="submit" class="btn btn-success btn-md"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>Submit!</button>
+					        <button class="btn btn-danger " id="back">back to top</button>
+					      </div>
+					    </form>
+					  </div>
+					</div>
+				</body>	
 </html>
